@@ -1,0 +1,23 @@
+{% extends 'web_app/home.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+<h2>Red Bucket Restaurent Food Reviews</h2>
+<div class="four">
+<table>
+    <thead>
+      <th>Food Name</th>
+      <th>Review</th>
+    </thead>
+    {% for i in r %}
+    <tr>
+       <td>{{i.food_name}}</td>
+        <td>{{i.review}}</td>
+    </tr>
+    {% endfor %}
+</table>
+    <a href="/review" style="text-align=center;">if your want to write a review...!</a>
+    </div>
+</body>
+{% endblock content %}

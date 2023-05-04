@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+   form{
+   border:2px solid white;
+   width:500px;
+   margin:auto;
+   padding: 20px 0px 40px 0px;
+   text-align:center;
+   color:white;
+        }
+
+   label{
+        font-style: oblique;
+        font-size:20px;
+        font-family: tahoma;
+        color: white;
+        }
+   input{
+        width:200px;
+        height:30px;
+        border-radius: 5px;
+        background:transparent;
+        margin-bottom:15px;
+        border:2px solid white;
+        color:white;
+
+        }
+   button{
+      height: 40px;
+      line-height: 40px;
+      background: red;
+      border-radius: 5px;
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: 3px;
+   }
+
+   body{
+      background-image: url('{% static 'images/10.jpg'%}')
+   }
+
+    </style>
+</head>
+<body>
+<form method="post">
+    <h1>SIGNUP FORM</h1>
+    {% for message in messages %}
+
+    <p><strong>Message: </strong><b>{{message}}</b></p>
+
+    {% endfor %}
+    {% csrf_token %}
+    <div class="lb-mt">
+    <label for="">UserName: </label>
+    <input type="text" name="username" id="username" placeholder="create a username" required>
+    <br>
+    <label for="">FirstName: </label>
+    <input type="text" name="fname" id="fname" placeholder="Your FirstName" required>
+    <br>
+    <label for="">LastName: </label>
+    <input type="text" name="lname" id="lname" placeholder="Your LastMame" required>
+    <br>
+    <label for="">Email: </label>
+    <input type="text" name="email" id="email" placeholder="your Email id" required>
+    <br>
+    <label for="">Password: </label>
+    <input type="password" name="pass1" id="pass1" placeholder="Create a Password" required>
+    <br>
+    <label for="">Confirm Password: </label>
+    <input type="password" name="pass2" id="pass2" placeholder="Enter your confirm password" required>
+    <br>
+    <button type="submit">SignUp</button><br><br>
+    <a href="/signin" style="color:white;">If you have an already account...!</a>
+        </div>
+</form>
+</body>
+</html>

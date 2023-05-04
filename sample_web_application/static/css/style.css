@@ -1,0 +1,83 @@
+h1{
+color: Red;
+font-style:italic;
+font-family: 'Brush Script MT',cursive;
+text-align: center;
+
+}
+
+.container{
+      max-width: 1200px;
+      margin:auto;
+      background:#f2f2f2;
+      overflow:auto;
+      padding-left:300px;
+      padding-top:50px;
+      padding-bottom:50px;
+
+}
+
+.gallery{
+      margin:5px;
+      border:2px solid #ccc;
+      float:left;
+      width:550px;
+}
+
+.gallery img{
+      width:100%;
+      height:auto;
+
+}
+
+.desc{
+    text-align:center;
+    color: black;
+}
+
+h2{
+color: Red;
+font-style:italic;
+font-family: 'Brush Script MT',cursive;
+text-align: center;
+}
+
+.txt-rb{
+    color:white;
+}
+
+.txt{
+   border: 2px;
+   background-color: orange;
+}
+
+.contact .p{
+      color:white:
+}
+
+.three{
+    color:red;
+}
+
+.one{
+   border:2px solid white;
+   border-radius:5px;
+   margin:auto;
+   text-align:center;
+   width:500px;
+   color:white;
+   padding: 20px 0px 20px 0px;
+}
+
+table, th,tr,td{
+   border:2px solid white;
+   color:white;
+   text-align:center;
+}
+.four{
+   border:2px solid white;
+   background-color:balck;
+   margin:auto;
+   width:600px;
+   padding: 10px 5px 5px 70px;
+}

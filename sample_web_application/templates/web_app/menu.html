@@ -1,0 +1,71 @@
+{% extends 'web_app/home.html' %}
+
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<h2>Red Bucket Restaurant Menu</h2>
+<div class="container">
+
+     <div class="gallery">
+         <img src="{% static 'images/big-tasty-burger.png' %}">
+         <div class="desc"><h6><strong>Veg burger</strong></h6>
+             <p><strong>Price : 150/-</strong></p>
+             </div>
+     </div>
+
+     <div class="gallery">
+         <img src="{% static 'images/2.jpg' %}">
+         <div class="desc"><h6><strong>chicken pop corn</strong></h6>
+         <p><strong>Price : 180/-</strong></p>
+             </div>
+     </div>
+
+     <div class="gallery">
+          <img src="{% static 'images/3.png' %}">
+          <div class="desc"><h6><strong>grill chicken</strong></h6>
+          <p><strong>Price : 250/-</strong></p>
+              </div>
+     </div>
+
+    <div class="gallery">
+         <img src="{% static 'images/4.png' %}">
+         <dev class="desc"><h6><strong>fish fry</strong></h6>
+         <p><strong>Price : 210/-</strong></p>
+             </dev>
+    </div>
+
+    <div class="gallery">
+         <img src="{% static 'images/5.png' %}">
+         <dev class="desc"><h6><strong>chicken biriyani</strong></h6>
+         <p><strong>Price : 240/-</strong></p>
+             </dev>
+    </div>
+    <div class="gallery">
+         <img src="{% static 'images/6.png' %}">
+         <dev class="desc"><h6><strong>frans special</strong></h6>
+         <p><strong>Price : 350/-</strong></p>
+             </dev>
+    </div>
+    <div class="gallery">
+         <img src="{% static 'images/7.png' %}">
+         <dev class="desc"><h6><strong>salman fish special</strong></h6>
+         <p><strong>Price : 350/-</strong></p>
+             </dev>
+    </div>
+    <div class="gallery">
+         <img src="{% static 'images/8.png' %}">
+         <dev class="desc"><h6><strong>coca cola</strong></h6>
+         <p><strong>Price : 50/-</strong></p>
+             </dev>
+    </div>
+    <div class="gallery">
+         <img src="{% static 'images/9.png' %}">
+         <dev class="desc"><h6><strong>chicken wings</strong></h6>
+         <p><strong>Price : 250/-</strong></p>
+             </dev>
+    </div>
+
+</div>
+
+{% endblock content %}

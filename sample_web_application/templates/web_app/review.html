@@ -1,0 +1,17 @@
+{% extends 'web_app/home.html' %}
+{% load static %}
+{% block content %}
+<div class="one">
+<form method="post">
+    {% for message in messages  %}
+    <p><strong>Message: </strong></p><b> {{message}} </b>
+    {% endfor %}
+
+    {{form.as_p}}
+    {% csrf_token %}
+    <button type="submit">submit</button><br><br>
+    <a href="/view_review">if you want see the reviews...!</a>
+</form>
+    </div>
+
+{% endblock content %}
